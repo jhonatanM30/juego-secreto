@@ -24,7 +24,7 @@
                 if(contadorIntentos < numeroIntentosPermitidos){
                 // Verifica si el número ingresado es igual al número almacenado
                 if (numeroIngresado === numeroSecreto) {
-                    mensaje = `¡Adivinaste! El número es correcto es : ${numeroSecreto} Necesitaste ${contadorIntentos} intento(s) para asertar, Inicia un nuevo juego`
+                    mensaje = `¡Adivinaste! El número correcto es : ${numeroSecreto}, Necesitaste ${contadorIntentos} intento(s) para asertar, Inicia un nuevo juego`
                     asignarTextoEtiqueta('mensaje', mensaje);  
                     bloquearIntento();                    
                 } else {
@@ -42,7 +42,7 @@
                         contadorIntentos ++;                     
                 }                
             }else{
-                 mensaje = `Superaste la cantidad de intentos permitidos ${numeroIntentosPermitidos} Inicia un nuevo Juego`;                
+                 mensaje = `Superaste la cantidad de intentos permitidos ${numeroIntentosPermitidos}, Inicia un nuevo Juego`;                
                  asignarTextoEtiqueta('mensaje', mensaje); 
                  bloquearIntento();                
                                 
